@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 from os import path
 import FreeCAD
 
@@ -148,10 +145,3 @@ def linkGlobalVarsToDocument(document: FreeCAD.Document) -> None:
         return
 
     document.recompute()
-
-
-def main():
-    linkGlobalVarsToDocument(FreeCAD.ActiveDocument)
-
-
-main()
