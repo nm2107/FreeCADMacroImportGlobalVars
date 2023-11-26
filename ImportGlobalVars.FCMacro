@@ -108,6 +108,7 @@ def makeGlobalVarsLink(document: FreeCAD.Document, globalVarsFileAbsolutePath: s
             continue
 
         spreadsheetObject = obj
+        break
 
     if not spreadsheetObject:
         raise NameError('GlobalVars document "' + globalVarsFileAbsolutePath + '" doesn\'t have a "' + globalVarsSpreadsheetName + '" spreadsheet.')
